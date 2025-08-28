@@ -1,7 +1,8 @@
 // Take 10 chars and display how many of them are upper
-// Date : 26-AUG-2025
+// Date : 28-AUG-2025
 
 #include<stdio.h>
+#include<conio.h>
 
 void main( )
 {
@@ -11,15 +12,13 @@ void main( )
 
     for(i = 1; i <= 10; i ++)
     {
-        printf("Enter char:");
-        ch = getchar();
+        printf("\nEnter char:");
+        ch = getche();
 
         if(ch>='A' && ch<='Z')
             count ++;
 
-        // remove char from keyboard buffer by taking and ignoring it
-        ch = getchar();
     }
 
-    printf("Count = %d", count);
+    printf("\nCount = %d", count);
 }
