@@ -10,7 +10,7 @@ void main( )
  int a[10];
  int i;
 
-    srand(time(0));
+    srand(time(0));  // Initialize the seed
 
     for(i = 0; i < 10; i ++)
     {
